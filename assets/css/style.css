@@ -580,6 +580,7 @@ span.menu-close {
     margin-bottom: 22px;
     font-size: 22px;
     color: #fff;
+    font-weight: 600;
 }
 
 .footer-links ul li a {
@@ -600,5 +601,20 @@ span.menu-close {
     line-height: 25px;
     max-width: 380px;
     width: 100%;
+    font-weight: 600;
+}
+
+.footer-bottom {
+    padding: 10px 0;
+    border-top: 1px solid rgba(255, 255, 255, .08);
+}
+
+.footer-bottom p {
+    margin: 0;
+    text-align: center;
+    transition: .3s;
+    color: #fff;
+    text-decoration: none;
+    font-size: 16px;
     font-weight: 600;
 }

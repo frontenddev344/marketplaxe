@@ -565,12 +565,23 @@
                     <p> Subscribe to receive the latest offers, new products, marketplace updates, and sports
                         inspiration straight to your inbox.
                     </p>
-                    <form>
-                        <div class="newsletter-inner">
-                            <input type="email" name="email" id="email" placeholder="Enter your email address">
-                            <button type="submit" class="custom-btn btn-primary">Newsletter</button>
-                        </div>
-                    </form>
+                    <form id="newsletterForm">
+                <div class="newsletter-inner">
+                    <input
+                        type="email"
+                        name="email"
+                        id="email"
+                        placeholder="Enter your email address"
+                    >
+                    <button type="submit" class="custom-btn btn-primary">
+                        Newsletter
+                    </button>
+                </div>
+
+                <small id="emailError" style="color:red; display:none; margin-top:8px;">
+                    Please enter a valid email address.
+                </small>
+            </form>
                 </div>
             </div>
         </section>

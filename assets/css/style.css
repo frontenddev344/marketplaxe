@@ -1101,16 +1101,24 @@ small.error-message {
     background-color: var(--color-primary);
 }
 
-.faq-sec .section-title  h2 {
+.faq-sec .section-title h2 {
     font-size: 24px;
     color: var(--color-black);
     font-weight: 600;
     margin-bottom: 20px;
     text-align: left;
 }
-.accordion-button:not(.collapsed)::after{
+
+.accordion-button:not(.collapsed)::after {
     filter: brightness(0) invert(1);
 }
-.accordion-item  button{
+
+.accordion-item button {
     font-weight: 600;
+}
+
+form#newsletterForm small {
+    text-align: center;
+    font-size: 14px;
+    font-family: var(--font-text);
 }

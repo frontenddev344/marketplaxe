@@ -55,3 +55,37 @@ $('.responsive').slick({
 
   ]
 });
+
+
+const form = document.getElementById("newsletterForm");
+const email = document.getElementById("email");
+const error = document.getElementById("emailError");
+
+form.addEventListener("submit", function (e) {
+    e.preventDefault(); // Stop form submission
+
+    const emailValue = email.value.trim();
+
+    if (emailValue === "") {
+        error.textContent = "Email is required.";
+        error.style.display = "block";
+        email.focus();
+        return;
+    }
+
+    const emailPattern = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+
+    if (!emailPattern.test(emailValue)) {
+        error.textContent = "Please enter a valid email address.";
+        error.style.display = "block";
+        email.focus();
+        return;
+    }
+
+    // Valid email - no alert, no submit action
+    error.style.display = "none";
+});
+
+email.addEventListener("input", function () {
+    error.style.display = "none";
+});

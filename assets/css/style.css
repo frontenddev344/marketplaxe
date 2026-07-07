@@ -44,6 +44,14 @@ h6 {
 
 }
 
+p,
+span,
+li,
+a,
+strong {
+    font-family: var(--font-text);
+}
+
 /* Top Header css */
 .top-header {
     background-color: var(--color-primary);
@@ -387,6 +395,7 @@ span.menu-close {
     object-fit: cover;
     border-radius: 1rem;
     transition: all 0.3s ease;
+    width: 100%;
 }
 
 .product-list .product-items:hover img {
@@ -593,6 +602,11 @@ span.menu-close {
     padding-bottom: 6px;
 }
 
+.footer-links ul li a:hover {
+    color: var(--color-hover);
+    padding-left: 5px;
+}
+
 .footer-logo p {
     font-size: 16px;
     color: rgb(255 255 255);
@@ -633,6 +647,9 @@ span.menu-close {
     font-family: var(--font-text);
     text-decoration: none;
 }
+
+
+
 /* Cookies CSS Start */
 .cookie-alert {
     position: fixed;
@@ -706,3 +723,79 @@ span.menu-close {
 }
 
 /* Cookies CSS End */
+
+/*  */
+.inr-bnr {
+    background-size: cover !important;
+    background-position: center !important;
+    background-repeat: no-repeat !important;
+    height: 30.625rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    z-index: 1;
+}
+
+.breadcrumb {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    font-size: 16px;
+    color: var(--color-white);
+}
+
+.breadcrumb a {
+    color: var(--color-white);
+    text-decoration: none;
+    transition: .3s;
+}
+
+.breadcrumb a:hover {
+    color: var(--color-primary);
+}
+
+.breadcrumb span:last-child {
+    color: #ccc;
+}
+
+.inr-bnr-content span {
+    display: inline-block;
+    color: var(--color-primary);
+    font-size: 15px;
+    font-weight: 700;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    margin-bottom: 15px;
+    font-family: var(--font-text);
+}
+
+.inr-bnr-content h2 {
+    font-size: 38px;
+    font-weight: 800;
+    line-height: 1.1;
+    margin-bottom: 20px;
+    color: var(--color-white);
+}
+
+.inr-bnr-content p {
+    font-size: 18px;
+    line-height: 1.8;
+    color: rgba(255, 255, 255, 0.85);
+    margin-bottom: 35px;
+    font-family: var(--font-text);
+    max-width: 630px;
+    width: 100%;
+}
+
+.shop-products .product-list {
+    margin-top: 60px;
+}
+
+.shop-new {
+    background: transparent;
+}
+
+.shop-why {
+    margin-top: 0;
+}

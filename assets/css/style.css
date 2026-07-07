@@ -71,6 +71,30 @@ strong {
 /* main header css */
 .main-header {
     padding: 20px 0;
+    border-bottom: 1px solid #cccccc45;
+    z-index: 999;
+}
+
+.is-sticky {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    animation: slideDown 0.35s ease-out;
+    background-color: var(--color-white);
+    box-shadow: 0 0.125rem 0.625rem rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(12px);
+    box-shadow: 0 1px 0 rgb(20 20 20 / 8%);
+}
+
+@keyframes slideDown {
+    from {
+        transform: translateY(-100%);
+    }
+
+    to {
+        transform: translateY(0);
+    }
 }
 
 span.menu-close {
@@ -901,4 +925,46 @@ span.menu-close {
     transition: all 0.3s ease;
     position: relative;
     margin: 0;
+}
+
+
+
+.blog-header h1 {
+    font-size: 30px;
+    font-weight: bold;
+}
+
+.blog-content-details ul li {
+    position: relative;
+    padding-bottom: 12px;
+    padding-left: 23px;
+}
+
+.blog-content-details ul li::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 9px;
+    width: 8px;
+    height: 8px;
+    display: block;
+    background: #04535c;
+    border-radius: 50%;
+}
+
+.blog-content-details h2 {
+    font-size: 26px;
+    font-weight: bold;
+}
+
+.blog-featured-image {
+    margin-bottom: 50px;
+}
+
+.blog-featured-image img {
+    width: 100%;
+    height: 500px;
+    object-fit: cover;
+    border-radius: 16px;
+    display: block;
 }

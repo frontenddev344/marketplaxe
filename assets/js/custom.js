@@ -6,12 +6,26 @@ function closeNav() {
   document.getElementById("mySidenavs").classList.remove("open");
 }
 
+//  header sticky js start  
+const header = document.querySelector(".main-header");
+const toggleClass = "is-sticky";
+
+window.addEventListener("scroll", () => {
+  const currentScroll = window.pageYOffset;
+  if (currentScroll > 40) {
+    header.classList.add(toggleClass);
+  } else {
+    header.classList.remove(toggleClass);
+  }
+});
+//  header sticky js end
+
 $('.responsive').slick({
   dots: false,
   infinite: true,
-  arrow:true,
+  arrow: true,
   speed: 300,
-  autoplay:true,
+  autoplay: true,
   slidesToShow: 6,
   slidesToScroll: 1,
   responsive: [
@@ -38,6 +52,6 @@ $('.responsive').slick({
         slidesToScroll: 1
       }
     }
-  
+
   ]
 });

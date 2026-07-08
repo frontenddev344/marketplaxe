@@ -57,35 +57,36 @@ $('.responsive').slick({
 });
 
 
-const form = document.getElementById("newsletterForm");
-const email = document.getElementById("email");
-const error = document.getElementById("emailError");
+document.addEventListener("DOMContentLoaded", function () {
 
-form.addEventListener("submit", function (e) {
-    e.preventDefault(); // Stop form submission
+    const form = document.getElementById("newsletterForm");
+    const email = document.getElementById("email");
+    const error = document.getElementById("emailError");
 
-    const emailValue = email.value.trim();
+    form.addEventListener("submit", function (e) {
 
-    if (emailValue === "") {
-        error.textContent = "Email is required.";
-        error.style.display = "block";
-        email.focus();
-        return;
-    }
+        e.preventDefault();
 
-    const emailPattern = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+        error.style.display = "none";
 
-    if (!emailPattern.test(emailValue)) {
-        error.textContent = "Please enter a valid email address.";
-        error.style.display = "block";
-        email.focus();
-        return;
-    }
+        const emailValue = email.value.trim();
 
-    // Valid email - no alert, no submit action
-    error.style.display = "none";
-});
+        if (emailValue === "") {
+            error.textContent = "Email is required.";
+            error.style.display = "block";
+            return;
+        }
 
-email.addEventListener("input", function () {
-    error.style.display = "none";
+        const emailPattern = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+
+        if (!emailPattern.test(emailValue)) {
+            error.textContent = "Please enter a valid email address.";
+            error.style.display = "block";
+            return;
+        }
+
+        form.reset();
+
+    });
+
 });

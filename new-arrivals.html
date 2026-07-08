@@ -1,238 +1,735 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-<title>New Sports Jerseys & Fan Apparel | MarketPlaxe</title>
-
-<meta name="description" content="Discover the newest jerseys, hoodies, accessories, and fan gear added to MarketPlaxe. Shop the latest marketplace arrivals today.">
-
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-
-<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
-
-<link rel="stylesheet"
-href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
-
-<style>
-
-*{
-margin:0;
-padding:0;
-box-sizing:border-box;
-}
-
-body{
-font-family:'Poppins',sans-serif;
-background:#f7f8fc;
-color:#222;
-line-height:1.7;
-}
-
-img{
-max-width:100%;
-display:block;
-}
-
-a{
-text-decoration:none;
-}
-
-.container{
-width:90%;
-max-width:1250px;
-margin:auto;
-}
-
-.section{
-padding:80px 0;
-}
-
-.section-title{
-font-size:38px;
-font-weight:700;
-margin-bottom:20px;
-text-align:center;
-}
-
-.section-subtitle{
-text-align:center;
-color:#666;
-margin-bottom:50px;
-}
-
-.btn{
-display:inline-block;
-padding:15px 35px;
-border-radius:50px;
-font-weight:600;
-transition:.3s;
-}
-
-.btn-primary{
-background:#0d6efd;
-color:#fff;
-}
-
-.btn-primary:hover{
-background:#084db6;
-}
-
-.btn-outline{
-border:2px solid #0d6efd;
-color:#0d6efd;
-margin-left:15px;
-}
-
-.btn-outline:hover{
-background:#0d6efd;
-color:#fff;
-}
-
-/* HERO */
-
-.hero{
-background:linear-gradient(135deg,#0d6efd,#2b7fff);
-color:#fff;
-padding:120px 0;
-position:relative;
-overflow:hidden;
-}
-
-.hero::before{
-content:"";
-position:absolute;
-width:350px;
-height:350px;
-background:rgba(255,255,255,.08);
-border-radius:50%;
-top:-120px;
-right:-100px;
-}
-
-.hero::after{
-content:"";
-position:absolute;
-width:250px;
-height:250px;
-background:rgba(255,255,255,.05);
-border-radius:50%;
-bottom:-100px;
-left:-80px;
-}
-
-.hero-content{
-position:relative;
-z-index:2;
-max-width:760px;
-}
-
-.hero-small{
-display:inline-block;
-background:rgba(255,255,255,.18);
-padding:8px 18px;
-border-radius:30px;
-font-size:14px;
-margin-bottom:20px;
-}
-
-.hero h1{
-font-size:60px;
-line-height:1.2;
-margin-bottom:25px;
-font-weight:800;
-}
-
-.hero p{
-font-size:18px;
-opacity:.95;
-margin-bottom:40px;
-}
-
-.hero-buttons{
-display:flex;
-flex-wrap:wrap;
-gap:15px;
-}
-
-.hero-buttons .btn-outline{
-margin-left:0;
-border-color:#fff;
-color:#fff;
-}
-
-.hero-buttons .btn-outline:hover{
-background:#fff;
-color:#0d6efd;
-}
-
-@media(max-width:768px){
-
-.hero{
-padding:90px 0;
-}
-
-.hero h1{
-font-size:38px;
-}
-
-.section-title{
-font-size:30px;
-}
-
-.hero-buttons{
-flex-direction:column;
-}
-
-.btn{
-width:100%;
-text-align:center;
-}
-
-}
-
-</style>
-
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>New Sports Jerseys & Fan Apparel | MarketPlaxe</title>
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/css/slick.css">
+    <link rel="stylesheet" href="assets/css/slick-theme.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/responsive.css">
 </head>
 
 <body>
 
-<!-- HERO SECTION -->
+    <!-- Header Start From Here -->
+    <header class="header">
+        <div class="top-header">
+            <div class="announcement">
+                <span>Free Shipping on Orders Over <strong>€50</strong> | 30-Day Easy Returns</span>
+            </div>
+        </div>
+        <div class="main-header">
+            <div class="container">
+                <div class="row">
+                    <div class="col-12">
+                        <div class="header-content d-flex justify-content-between align-items-center">
+                            <!-- Header Logo -->
+                            <div class="header-logo">
+                                <a href="./">
+                                    <img src="assets/images/logo.png" alt="header logo">
+                                </a>
+                            </div>
+                            <!-- Header Logo -->
+                            <div class="menu-list" id="mySidenavs">
+                                <span class="menu-close" onclick="closeNav()">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                        fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"
+                                        stroke-linejoin="round">
+                                        <line x1="18" y1="6" x2="6" y2="18"></line>
+                                        <line x1="6" y1="6" x2="18" y2="18"></line>
+                                    </svg>
+                                </span>
+                                <ul class="d-flex align-items-center gap-4">
+                                    <li>
+                                        <a href="./">Home</a>
+                                    </li>
+                                    <li>
+                                        <a href="shop">Shop</a>
+                                    </li>
+                                    <li>
+                                        <a href="teams">Teams</a>
+                                    </li>
+                                    <li>
+                                        <a href="new-arrivals" class="active">New Arrivals</a>
+                                    </li>
+                                    <li>
+                                        <a href="blogs">Blog</a>
+                                    </li>
+                                    <li>
+                                        <a href="about-us">About Us</a>
+                                    </li>
+                                    <li>
+                                        <a href="contact-us">Contact Us</a>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="menu-icon d-flex align-items-center gap-4">
+                                <span onclick="openNav()" class="toggle-btn">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                        stroke-linejoin="round">
+                                        <line x1="3" y1="6" x2="21" y2="6"></line>
+                                        <line x1="3" y1="12" x2="21" y2="12"></line>
+                                        <line x1="3" y1="18" x2="21" y2="18"></line>
+                                    </svg>
+                                </span>
+                                <div class="header-btn">
+                                    <a href="shop">Shop Now</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+    <!--  Header End Here  -->
 
-<section class="hero">
+    <main>
+        <!-- Hero Section Start From Here -->
+        <section class="inr-bnr" style="background: url(./assets/images/shop-bnr.png);">
+            <div class="container">
+                <div class="hero-content">
+                    <span> Fresh Arrivals</span>
+                    <h1>Discover What's New This Week
+                    </h1>
+                    <p>Stay ahead of every season with the latest jerseys, hoodies, fan apparel, and accessories
+                        arriving from marketplace sellers. Explore trending products, exclusive releases, and fresh
+                        collections updated regularly.
+                    </p>
+                    <div class="hero-btn">
+                        <a href="new-arrivals" class="custom-btn btn-primary"> Shop New Arrivals</a>
+                        <a href="shop" class="custom-btn btn-secondary"> Browse Collections
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!--  Hero Section End Here  -->
 
-<div class="container">
+        <section class="featured-products">
+            <div class="container">
+                <div class="featured-top-text">
+                    <span class="section-subtitle">JUST ARRIVED</span>
+                    <h2 class="section-title">Recently Added Products</h2>
+                    <p> Latest marketplace additions featuring premium sports jerseys,<br> apparel, fan gear, caps,
+                        hoodies,
+                        and accessories.
 
-<div class="hero-content">
+                    </p>
+                </div>
+                <div class="featured-inner">
 
-<span class="hero-small">
-Fresh Arrivals
-</span>
+                    <div class="product-list">
+                        <div class="product-items">
+                            <div class="product-card">
+                                <div class="product-img">
+                                    <span class="badge">NEW</span>
+                                    <img src="assets/images/pro-league.png" alt="pro-league">
+                                </div>
+                                <div class="product-content">
+                                    <h3>Football Jerseys</h3>
+                                    <p>Discover the latest football jerseys from your favorite teams.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="product-items">
+                            <div class="product-card">
+                                <div class="product-img">
+                                    <span class="badge">NEW</span>
+                                    <img src="assets/images/basketballjersey.png" alt="basketballjersey">
+                                </div>
+                                <div class="product-content">
+                                    <h3>Basketball Jerseys</h3>
 
-<h1>
-Discover What's New This Week
-</h1>
+                                    <p>Premium basketball jerseys with modern styles and quality.
 
-<p>
-Stay ahead of every season with the latest jerseys, hoodies, fan apparel, and accessories arriving from marketplace sellers. Explore trending products, exclusive releases, and fresh collections updated regularly.
-</p>
+                                    </p>
 
-<div class="hero-buttons">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="product-items">
+                            <div class="product-card">
+                                <div class="product-img">
+                                    <span class="badge">NEW</span>
+                                    <img src="assets/images/baseballj.png" alt="baseballj">
+                                </div>
+                                <div class="product-content">
+                                    <h3>Baseball Jerseys</h3>
+                                    <p>Official-inspired baseball apparel for every passionate fan.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="product-items">
+                            <div class="product-card">
+                                <div class="product-img">
+                                    <span class="badge">NEW</span>
+                                    <img src="assets/images/soccer-Jerseys.png" alt="soccer Jersey">
+                                </div>
+                                <div class="product-content">
+                                    <h3>Soccer Jerseys</h3>
+                                    <p>Explore the newest soccer club and national team jerseys.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="product-items">
+                            <div class="product-card">
+                                <div class="product-img">
+                                    <span class="badge">NEW</span>
+                                    <img src="assets/images/pro-league.png" alt="pro-league">
+                                </div>
+                                <div class="product-content">
+                                    <h3>Hockey Apparel</h3>
+                                    <p>Performance hockey apparel and fan essentials. </p>
 
-<a href="#" class="btn btn-primary">
-Shop New Drops
-</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="product-items">
+                            <div class="product-card">
+                                <div class="product-img">
+                                    <span class="badge">NEW</span>
+                                    <img src="assets/images/basketballjersey.png" alt="basketballjersey">
+                                </div>
+                                <div class="product-content">
+                                    <h3>Hoodies</h3>
+                                    <p>Comfortable hoodies perfect for training and casual wear.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="product-items">
+                            <div class="product-card">
+                                <div class="product-img">
+                                    <span class="badge">NEW</span>
+                                    <img src="assets/images/baseballj.png" alt="baseballj">
+                                </div>
+                                <div class="product-content">
+                                    <h3>Caps</h3>
 
-<a href="#" class="btn btn-outline">
-Browse Collections
-</a>
+                                    <p>Stylish sports caps to complete your game-day look.</p>
 
-</div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="product-items">
+                            <div class="product-card">
+                                <div class="product-img">
+                                    <span class="badge">NEW</span>
+                                    <img src="assets/images/soccer-Jerseys.png" alt="soccer Jersey">
+                                </div>
+                                <div class="product-content">
+                                    <h3>Accessories</h3>
+                                    <p>Find sports accessories including bags, bottles, gloves and more.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
 
-</div>
+        <!-- Featured Products -->
+        <section class="featured-products bg-light-cst">
+            <div class="container">
+                <div class="featured-top-text">
+                    <span class="section-subtitle">Trending This Week</span>
+                    <h2 class="section-title">Fan Favorites</h2>
+                    <p> Explore the most popular jerseys, apparel, and <br> accessories loved by sports fans this week.
+                    </p>
+                </div>
+                <div class="featured-inner">
 
-</div>
+                    <div class="product-list">
+                        <div class="product-items">
+                            <div class="product-card">
+                                <div class="product-img">
+                                    <img src="assets/images/pro-league.png" alt="pro-league">
+                                </div>
+                                <div class="product-content">
+                                    <h3>Football Home Jersey</h3>
+                                    <div class="rating">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" fill="#FFC107"
+                                            viewBox="0 0 24 24">
+                                            <path
+                                                d="M12 2l2.92 6.26L22 9.27l-5 4.87L18.18 22 12 18.56 5.82 22 7 14.14 2 9.27l7.08-1.01L12 2z" />
+                                        </svg>
 
-</section>
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" fill="#FFC107"
+                                            viewBox="0 0 24 24">
+                                            <path
+                                                d="M12 2l2.92 6.26L22 9.27l-5 4.87L18.18 22 12 18.56 5.82 22 7 14.14 2 9.27l7.08-1.01L12 2z" />
+                                        </svg>
+
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" fill="#FFC107"
+                                            viewBox="0 0 24 24">
+                                            <path
+                                                d="M12 2l2.92 6.26L22 9.27l-5 4.87L18.18 22 12 18.56 5.82 22 7 14.14 2 9.27l7.08-1.01L12 2z" />
+                                        </svg>
+
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" fill="#FFC107"
+                                            viewBox="0 0 24 24">
+                                            <path
+                                                d="M12 2l2.92 6.26L22 9.27l-5 4.87L18.18 22 12 18.56 5.82 22 7 14.14 2 9.27l7.08-1.01L12 2z" />
+                                        </svg>
+
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" fill="#FFC107"
+                                            viewBox="0 0 24 24">
+                                            <path
+                                                d="M12 2l2.92 6.26L22 9.27l-5 4.87L18.18 22 12 18.56 5.82 22 7 14.14 2 9.27l7.08-1.01L12 2z" />
+                                        </svg>
+                                        <span>(5.5)</span>
+                                    </div>
+                                    <span class="prices"><strong>Price:</strong> €49.99</span>
+
+                                </div>
+                            </div>
+                        </div>
+                        <div class="product-items">
+                            <div class="product-card">
+                                <div class="product-img">
+                                    <img src="assets/images/basketballjersey.png" alt="basketballjersey">
+                                </div>
+                                <div class="product-content">
+                                    <h3>Basketball Jersey</h3>
+                                    <div class="rating">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" fill="#FFC107"
+                                            viewBox="0 0 24 24">
+                                            <path
+                                                d="M12 2l2.92 6.26L22 9.27l-5 4.87L18.18 22 12 18.56 5.82 22 7 14.14 2 9.27l7.08-1.01L12 2z" />
+                                        </svg>
+
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" fill="#FFC107"
+                                            viewBox="0 0 24 24">
+                                            <path
+                                                d="M12 2l2.92 6.26L22 9.27l-5 4.87L18.18 22 12 18.56 5.82 22 7 14.14 2 9.27l7.08-1.01L12 2z" />
+                                        </svg>
+
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" fill="#FFC107"
+                                            viewBox="0 0 24 24">
+                                            <path
+                                                d="M12 2l2.92 6.26L22 9.27l-5 4.87L18.18 22 12 18.56 5.82 22 7 14.14 2 9.27l7.08-1.01L12 2z" />
+                                        </svg>
+
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" fill="#FFC107"
+                                            viewBox="0 0 24 24">
+                                            <path
+                                                d="M12 2l2.92 6.26L22 9.27l-5 4.87L18.18 22 12 18.56 5.82 22 7 14.14 2 9.27l7.08-1.01L12 2z" />
+                                        </svg>
+
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" fill="#FFC107"
+                                            viewBox="0 0 24 24">
+                                            <path
+                                                d="M12 2l2.92 6.26L22 9.27l-5 4.87L18.18 22 12 18.56 5.82 22 7 14.14 2 9.27l7.08-1.01L12 2z" />
+                                        </svg>
+                                        <span>(5.5)</span>
+                                    </div>
+                                    <span class="prices"><strong>Price:</strong> €44.99</span>
+
+                                </div>
+                            </div>
+                        </div>
+                        <div class="product-items">
+                            <div class="product-card">
+                                <div class="product-img">
+                                    <img src="assets/images/baseballj.png" alt="baseballj">
+                                </div>
+                                <div class="product-content">
+                                    <h3>Baseball Jersey
+                                    </h3>
+                                    <div class="rating">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" fill="#FFC107"
+                                            viewBox="0 0 24 24">
+                                            <path
+                                                d="M12 2l2.92 6.26L22 9.27l-5 4.87L18.18 22 12 18.56 5.82 22 7 14.14 2 9.27l7.08-1.01L12 2z" />
+                                        </svg>
+
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" fill="#FFC107"
+                                            viewBox="0 0 24 24">
+                                            <path
+                                                d="M12 2l2.92 6.26L22 9.27l-5 4.87L18.18 22 12 18.56 5.82 22 7 14.14 2 9.27l7.08-1.01L12 2z" />
+                                        </svg>
+
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" fill="#FFC107"
+                                            viewBox="0 0 24 24">
+                                            <path
+                                                d="M12 2l2.92 6.26L22 9.27l-5 4.87L18.18 22 12 18.56 5.82 22 7 14.14 2 9.27l7.08-1.01L12 2z" />
+                                        </svg>
+
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" fill="#FFC107"
+                                            viewBox="0 0 24 24">
+                                            <path
+                                                d="M12 2l2.92 6.26L22 9.27l-5 4.87L18.18 22 12 18.56 5.82 22 7 14.14 2 9.27l7.08-1.01L12 2z" />
+                                        </svg>
+
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" fill="#FFC107"
+                                            viewBox="0 0 24 24">
+                                            <path
+                                                d="M12 2l2.92 6.26L22 9.27l-5 4.87L18.18 22 12 18.56 5.82 22 7 14.14 2 9.27l7.08-1.01L12 2z" />
+                                        </svg>
+                                        <span>(5.5)</span>
+                                    </div>
+                                    <span class="prices"><strong>Price:</strong> €39.99</span>
+
+                                </div>
+                            </div>
+                        </div>
+                        <div class="product-items">
+                            <div class="product-card">
+                                <div class="product-img">
+                                    <img src="assets/images/soccer-Jerseys.png" alt="soccer Jersey">
+                                </div>
+                                <div class="product-content">
+                                    <h3>Soccer Away Jersey
+                                    </h3>
+                                    <div class="rating">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" fill="#FFC107"
+                                            viewBox="0 0 24 24">
+                                            <path
+                                                d="M12 2l2.92 6.26L22 9.27l-5 4.87L18.18 22 12 18.56 5.82 22 7 14.14 2 9.27l7.08-1.01L12 2z" />
+                                        </svg>
+
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" fill="#FFC107"
+                                            viewBox="0 0 24 24">
+                                            <path
+                                                d="M12 2l2.92 6.26L22 9.27l-5 4.87L18.18 22 12 18.56 5.82 22 7 14.14 2 9.27l7.08-1.01L12 2z" />
+                                        </svg>
+
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" fill="#FFC107"
+                                            viewBox="0 0 24 24">
+                                            <path
+                                                d="M12 2l2.92 6.26L22 9.27l-5 4.87L18.18 22 12 18.56 5.82 22 7 14.14 2 9.27l7.08-1.01L12 2z" />
+                                        </svg>
+
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" fill="#FFC107"
+                                            viewBox="0 0 24 24">
+                                            <path
+                                                d="M12 2l2.92 6.26L22 9.27l-5 4.87L18.18 22 12 18.56 5.82 22 7 14.14 2 9.27l7.08-1.01L12 2z" />
+                                        </svg>
+
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" fill="#FFC107"
+                                            viewBox="0 0 24 24">
+                                            <path
+                                                d="M12 2l2.92 6.26L22 9.27l-5 4.87L18.18 22 12 18.56 5.82 22 7 14.14 2 9.27l7.08-1.01L12 2z" />
+                                        </svg>
+                                        <span>(5.5)</span>
+                                    </div>
+                                    <span class="prices"><strong>Price:</strong> €54.99</span>
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- Featured Products -->
+
+
+        <section class="new-dro sp">
+            <div class="container">
+                <div class="dro-inr">
+                    <span class="section-subtitle"> WHY CHOOSE US </span>
+                    <h2 class="section-title">Why Shop New New Arrivals?
+                    </h2>
+                    <div class="row">
+                        <div class="col-md-4">
+                            <div class="dro-item-card">
+                                <h3>Weekly Product Updates</h3>
+                                <p>Fresh sports apparel and jerseys added every week to keep your collection updated.
+                                </p>
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="dro-item-card">
+                                <h3>Marketplace Variety</h3>
+                                <p>Browse thousands of products from trusted marketplace sellers in one place.
+                                </p>
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="dro-item-card">
+                                <h3>Competitive Prices
+                                </h3>
+                                <p>Compare offers from multiple sellers to find the best deals every day.
+                                </p>
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="dro-item-card">
+                                <h3>Secure Shopping
+                                </h3>
+                                <p>Enjoy safe checkout with reliable payment methods and buyer protection.
+
+                                </p>
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="dro-item-card">
+                                <h3>Worldwide Shipping</h3>
+                                <p>Order from anywhere with international delivery to supported destinations.
+                                </p>
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="dro-item-card">
+                                <h3>Easy Returns</h3>
+                                <p>Simple return process for eligible products, making shopping worry-free. </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="customer-review sp">
+            <div class="container">
+                <div class="customer-inr">
+                    <div class="review-card">
+
+                        <h2 class="review-title">Customer Reviews</h2>
+
+                        <div class="stars">
+                            ★★★★★
+                        </div>
+
+                        <p class="review-text">
+                            "Love checking this page every week. There's always something new."
+                        </p>
+
+                        <div class="reviewer">
+
+                            <img src="https://i.pravatar.cc/150?img=32" alt="Customer">
+
+                            <div>
+                                <h4>Michael Anderson</h4>
+                                <span>Verified Marketplace Customer</span>
+                            </div>
+
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+        <!-- Newsletter -->
+        <section class="newsletter sp">
+            <div class="container">
+                <div class="newsletter-content">
+                    <h2>Join Our Community</h2>
+                    <p>Subscribe to receive marketplace updates, new collections, and exclusive offers.</p>
+                    <form id="newsletterForm">
+                        <div class="newsletter-inner">
+                            <input type="email" name="email" id="email" placeholder="Enter your email address">
+                            <button type="submit" class="custom-btn btn-primary">
+                                Newsletter
+                            </button>
+                        </div>
+
+                        <small id="emailError" style="color:red; display:none; margin-top:8px;">
+                            Please enter a valid email address.
+                        </small>
+                    </form>
+                </div>
+            </div>
+        </section>
+        <!-- Newsletter -->
+
+    </main>
+
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-inner">
+                <div class="footer-logo">
+                    <a href="./">
+                        <img src="assets/images/logo.png" alt="footer logo">
+                    </a>
+                    <p>iscover premium sports apparel, jerseys, and accessories at MarketPlaxe.com. We bring together
+                        trusted products, competitive prices, and a seamless online shopping experience in one
+                        marketplace.</p>
+                </div>
+                <div class="footer-links">
+                    <h2>Quick Links</h2>
+                    <ul>
+                        <li>
+                            <a href="./">Home</a>
+                        </li>
+                        <li>
+                            <a href="shop">Shop</a>
+                        </li>
+                        <li>
+                            <a href="teams">Teams</a>
+                        </li>
+                        <li>
+                            <a href="new-arrivals">New Arrivals</a>
+                        </li>
+                        <li>
+                            <a href="blogs">Blog</a>
+                        </li>
+                        <li>
+                            <a href="about-us">About Us</a>
+                        </li>
+                        <li>
+                            <a href="contact-us">Contact Us</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="footer-links">
+                    <h2>Policies</h2>
+
+                    <ul>
+                        <li><a href="privacy-policy">Privacy Policy</a></li>
+                        <li><a href="terms-&-conditions">Terms & Conditions</a></li>
+                    </ul>
+                </div>
+                <div class="footer-contact">
+                    <h2>Contact Us</h2>
+
+                    <ul>
+                        <li>
+                            Av. de la Catedral, 6,
+                            <br>
+                            08002 Barcelona
+                        </li>
+                        <li><a href="tel:+34935047458"><strong>Phone:</strong>+34 935 047 458</a> </li>
+                        <li><strong>Hours:</strong> Mon – Fri | 9:00 AM – 6:00 PM</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>© 2026 <a href="./">marketplaxe.com</a> All Rights Reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!--  -->
+    <div class="card cookie-alert">
+        <div class="card-body">
+            <h3 class="card-title theme">🍪</h3>
+            <h4 class="card-title">Use of cookies</h4>
+            <p class="card-text">
+                This website uses cookies to provide you with the best user experience.
+                By continuing to use this website, you agree to the use of cookies.
+                For more information, see our
+                <a href="privacy-policy">Privacy Policy</a>.
+            </p>
+
+            <div class="btn-toolbar justify-content-start gap-2">
+                <a href="javascript:void(0)" class="butn theme accept-cookies">
+                    Accept
+                </a>
+
+                <a href="javascript:void(0)" class="butn theme reject-cookies">
+                    Reject
+                </a>
+            </div>
+        </div>
+    </div>
+    <!--  -->
+
+
+    <!--  -->
+    <script src="assets/js/jquery.min.js"></script>
+    <script>
+        (function () {
+            "use strict";
+
+            const cookieAlert = document.querySelector(".cookie-alert");
+            const acceptBtn = document.querySelector(".accept-cookies");
+            const rejectBtn = document.querySelector(".reject-cookies");
+
+            const CONSENT_KEY = "cookieConsent";
+
+            // Check existing consent
+            const consent = localStorage.getItem(CONSENT_KEY);
+
+            if (!consent) {
+                cookieAlert.classList.add("show");
+            } else {
+                cookieAlert.classList.remove("show");
+                applyConsent(consent);
+            }
+
+            // Accept
+            acceptBtn.addEventListener("click", function () {
+                localStorage.setItem(CONSENT_KEY, "accepted");
+
+                setCookie("acceptCookies", "true", 365);
+                deleteCookie("rejectCookies");
+
+                applyConsent("accepted");
+                cookieAlert.classList.remove("show");
+            });
+
+            // Reject
+            rejectBtn.addEventListener("click", function () {
+                localStorage.setItem(CONSENT_KEY, "rejected");
+
+                setCookie("rejectCookies", "true", 365);
+                deleteCookie("acceptCookies");
+
+                applyConsent("rejected");
+                cookieAlert.classList.remove("show");
+            });
+
+            function applyConsent(status) {
+
+                if (status === "accepted") {
+                    loadAnalyticsScripts();
+                }
+
+                if (status === "rejected") {
+
+                    // Remove analytics/marketing cookies
+                    deleteCookie("_ga");
+                    deleteCookie("_gid");
+                    deleteCookie("_gat");
+                    deleteCookie("_fbp");
+
+                    // No analytics scripts should load
+                    console.log("Analytics and marketing cookies rejected.");
+                }
+            }
+
+            function loadAnalyticsScripts() {
+
+                // Prevent duplicate loading
+                if (window.analyticsLoaded) return;
+
+                window.analyticsLoaded = true;
+
+
+            }
+
+        })();
+
+        function setCookie(name, value, days) {
+            const d = new Date();
+            d.setTime(d.getTime() + (days * 24 * 60 * 60 * 1000));
+
+            document.cookie =
+                name + "=" + value +
+                ";expires=" + d.toUTCString() +
+                ";path=/;SameSite=Lax";
+        }
+
+        function deleteCookie(name) {
+            document.cookie =
+                name +
+                "=;expires=Thu, 01 Jan 1970 00:00:00 UTC;path=/;";
+        }
+    </script>
+    <script src="assets/js/slick.js"></script>
+    <script src="assets/js/bootstrap.bundle.min.js"></script>
+    <script src="assets/js/custom.js"></script>
+</body>
+
+</html>

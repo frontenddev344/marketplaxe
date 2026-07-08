@@ -413,6 +413,7 @@ span.menu-close {
     height: 250px;
     overflow: hidden;
     border-radius: 1rem;
+    position: relative;
 }
 
 .product-img img {
@@ -1271,10 +1272,62 @@ form#newsletterForm small {
     color: #6b7280;
     font-size: 15px;
 }
+
 .review-text {
     font-size: 18px;
     line-height: 1.8;
     color: #4b5563;
     font-style: italic;
     margin-bottom: 30px;
+}
+
+.badge {
+    position: absolute;
+    top: 15px;
+    left: 15px;
+    background: var(--color-primary);
+    color: #fff;
+    padding: 6px 12px;
+    border-radius: 30px;
+    font-size: 12px;
+    font-weight: 600;
+    z-index: 5;
+}
+
+.bg-light-cst {
+    background: #f5f5f545;
+}
+
+.dro-item-card {
+    border: 1px solid #dfe3e8;
+    padding: 24px;
+    border-radius: 1rem;
+    height: 100%;
+    transition: all .3s ease;
+}
+
+.dro-item-card:hover {
+    border: 1px solid var(--color-primary);
+    transform: translateY(-6px);
+
+}
+
+.dro-inr .row .col-md-4 {
+    margin-bottom: 24px;
+}
+
+.dro-inr .row {
+    margin-top: 50px;
+}
+
+.dro-item-card h3 {
+    font-size: 22px;
+    font-weight: 600;
+}
+
+
+.dro-item-card p {
+    color: #495057;
+    text-decoration: none;
+    font-size: 16px;
 }

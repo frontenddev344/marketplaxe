@@ -1,3 +1,15 @@
+@media (max-width: 1199px) {
+    .shop-marketplaxe-grid {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 20px;
+    }
+
+    .product-list {
+        grid-template-columns: repeat(3, 1fr);
+
+    }
+}
+
 @media (max-width: 991px) {
     .menu-list {
         width: 0;
@@ -48,7 +60,12 @@
     }
 
     .footer-inner {
-        grid-template-columns: 1fr 1fr;
+        grid-template-columns: 1fr 1fr 1fr;
+
+    }
+
+    .product-list {
+        grid-template-columns: repeat(2, 1fr);
 
     }
 
@@ -59,5 +76,34 @@
 
         grid-template-columns: 1fr;
 
+    }
+
+    .product-list {
+        grid-template-columns: repeat(1, 1fr);
+
+    }
+
+    .shop-marketplaxe-grid {
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    .newsletter-inner {
+
+        flex-direction: column;
+    }
+
+    .newsletter-inner input {
+        flex: unset;
+
+    }
+
+    .header-btn a {
+        font-size: 14px;
+        padding: 11px 10px;
+        font-weight: 400;
+    }
+
+    .header-logo img {
+        max-width: 180px;
     }
 }

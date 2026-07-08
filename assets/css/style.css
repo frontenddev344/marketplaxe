@@ -1378,3 +1378,12 @@ form#newsletterForm small {
 .tab-content {
     margin-top: 50px;
 }
+
+.header-logo img {
+    max-width: 230px;
+}
+
+.footer-logo img {
+    max-width: 230px;
+    filter: brightness(0) invert(1);
+}

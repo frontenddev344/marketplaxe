@@ -1331,3 +1331,50 @@ form#newsletterForm small {
     text-decoration: none;
     font-size: 16px;
 }
+
+.tab-content {
+    display: none;
+}
+
+.tab-content.active {
+    display: block;
+}
+
+.featured-content p {
+    max-width: 620px;
+    margin: auto;
+    color: var(--text);
+    line-height: 1.8;
+    margin-bottom: 60px;
+    text-align: center;
+    font-size: 16px;
+}
+
+.tab {
+    display: inline-block;
+    padding: 12px 28px;
+    background: #fff;
+    color: #222;
+    text-decoration: none;
+    border: 1px solid #ddd;
+    border-radius: 50px;
+    font-size: 16px;
+    font-weight: 600;
+    transition: all .3s ease;
+}
+
+.tab:hover {
+    background-color: var(--color-primary);
+    border: 1px solid var(--color-primary);
+    color: #fff;
+}
+
+.tab.active {
+    background-color: var(--color-primary);
+    border: 1px solid var(--color-primary);
+    color: #fff;
+}
+
+.tab-content {
+    margin-top: 50px;
+}

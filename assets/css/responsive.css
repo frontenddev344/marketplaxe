@@ -125,6 +125,27 @@
         margin: 0;
 
     }
+
+    .about-story-inr .row .col-lg-4.col-md-6 {
+        margin-bottom: 20px;
+    }
+
+    .marketplace-inr .row .col-lg-3.col-md-6 {
+        margin-bottom: 20px;
+    }
+
+    .review-title {
+        font-size: 30px;
+
+    }
+
+    .review-text {
+        font-size: 16px;
+
+    }
+    .assistance-inr .row .col-lg-3.col-md-6 {
+    margin-bottom: 20px;
+}
 }
 
 @media (max-width: 575px) {

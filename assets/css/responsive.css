@@ -47,5 +47,17 @@
         flex-direction: column;
     }
 
+    .footer-inner {
+        grid-template-columns: 1fr 1fr;
 
+    }
+
+}
+
+@media (max-width: 575px) {
+    .footer-inner {
+
+        grid-template-columns: 1fr;
+
+    }
 }

@@ -1387,3 +1387,14 @@ form#newsletterForm small {
     max-width: 230px;
     filter: brightness(0) invert(1);
 }
+
+.tab-cs {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.inr-bnr-content .hero-btn {
+    margin-top: 20px;
+    flex-wrap: wrap;
+}

@@ -1398,3 +1398,14 @@ form#newsletterForm small {
     margin-top: 20px;
     flex-wrap: wrap;
 }
+
+.notice {
+    padding-bottom: 40px;
+}
+
+.notice p {
+    margin: 0;
+    font-size: 12px;
+    font-style: italic;
+    color: #fff;
+}

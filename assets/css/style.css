@@ -542,6 +542,35 @@ span.menu-close {
 .newsletter {
     background-color: #f5f5f545;
 }
+.newsletter-consent {
+    margin-top: 15px;
+    text-align: left;
+}
+
+.newsletter-consent label {
+    display: flex;
+    align-items: flex-start;
+    gap: 10px;
+    font-size: 14px;
+    line-height: 1.5;
+    color: #555;
+    cursor: pointer;
+    justify-content: center;
+}
+
+.newsletter-consent input[type="checkbox"] {
+    margin-top: 3px;
+    flex-shrink: 0;
+}
+
+.newsletter-consent a {
+    color: inherit;
+    text-decoration: underline;
+}
+
+.newsletter-consent a:hover {
+    text-decoration: none;
+}
 
 .newsletter-content h2 {
     font-size: 38px;

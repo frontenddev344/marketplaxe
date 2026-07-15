@@ -542,6 +542,7 @@ span.menu-close {
 .newsletter {
     background-color: #f5f5f545;
 }
+
 .newsletter-consent {
     margin-top: 15px;
     text-align: left;
@@ -672,6 +673,10 @@ span.menu-close {
     width: 100%;
     font-weight: 600;
     margin-top: 22px;
+}
+
+.footer-logo p a {
+    color: #fff;
 }
 
 .footer-bottom {

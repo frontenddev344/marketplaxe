@@ -2,16 +2,26 @@
 @import url('https://fonts.googleapis.com/css2?family=Urbanist:ital,wght@0,100..900;1,100..900&display=swap');
 
 :root {
-    --color-primary: #088178;
-    --color-white: #ffffff;
+    --color-primary: #DAFF0D;
     --color-black: #000000;
-    --color-hover: #056d6e;
+    --color-hover: #c9e42f;
+    --color-white: #ffffff;
+    --text: #ffffff;
+    --footer: #1b1b1b;
+    --grace: #6b7280;
 
 
     /* Font */
     --font-text: "DM Sans", sans-serif;
     --font-heading: "Urbanist", sans-serif;
 
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: #010101;
 }
 
 * {
@@ -51,6 +61,7 @@ a,
 label,
 strong {
     font-family: var(--font-text);
+    color: var(--color-white);
 }
 
 /* Top Header css */
@@ -65,8 +76,12 @@ strong {
     text-align: center;
 }
 
+.header .announcement strong {
+    color: var(--color-black);
+}
+
 .announcement span {
-    color: var(--color-white);
+    color: var(--color-black);
 }
 
 /* main header css */
@@ -82,10 +97,10 @@ strong {
     left: 0;
     width: 100%;
     animation: slideDown 0.35s ease-out;
-    background-color: var(--color-white);
     box-shadow: 0 0.125rem 0.625rem rgba(0, 0, 0, 0.1);
     backdrop-filter: blur(12px);
     box-shadow: 0 1px 0 rgb(20 20 20 / 8%);
+    background-color: var(--color-black);
 }
 
 @keyframes slideDown {
@@ -107,7 +122,7 @@ span.menu-close {
 }
 
 .menu-list ul li a {
-    color: #212529;
+    color: var(--color-white);
     text-decoration: none;
     font-size: 1rem;
     font-weight: 600;
@@ -140,7 +155,7 @@ span.menu-close {
 
 .header-btn a {
     background-color: var(--color-primary);
-    color: #fff;
+    color: var(--color-black);
     box-shadow: 0 6px 15px rgba(8, 129, 120, 0.16);
     border-radius: .5rem;
     padding: 11px 21px;
@@ -194,7 +209,7 @@ span.menu-close {
 
 .btn-primary {
     background-color: var(--color-primary);
-    color: var(--color-white);
+    color: var(--color-black);
     box-shadow: 0 6px 15px rgba(8, 129, 120, 0.16);
     border-radius: .5rem;
     padding: 11px 21px;
@@ -206,7 +221,7 @@ span.menu-close {
 
 .btn-secondary {
     background-color: var(--color-white);
-    color: var(--color-primary);
+    color: var(--color-black);
     box-shadow: 0 6px 15px rgba(8, 129, 120, 0.16);
     border-radius: .5rem;
     padding: 11px 21px;
@@ -219,7 +234,6 @@ span.menu-close {
 .btn-primary:hover,
 .btn-secondary:hover {
     background-color: var(--color-hover);
-    color: #fff;
 }
 
 .hero-btn {
@@ -231,9 +245,6 @@ span.menu-close {
     padding: 60px 0;
 }
 
-.shop-by-sport {
-    background-color: #f5f5f545;
-}
 
 /*  */
 .section-subtitle {
@@ -251,7 +262,7 @@ span.menu-close {
 .section-title {
     font-size: 46px;
     font-weight: 700;
-    color: var(--secondary);
+    color: var(--color-primary);
     margin-bottom: 10px;
     text-align: center;
 }
@@ -293,7 +304,7 @@ span.menu-close {
 }
 
 .category-items p {
-    color: #212529;
+    color: var(--color-white);
     text-decoration: none;
     font-size: 1rem;
     font-weight: 600;
@@ -397,7 +408,7 @@ span.menu-close {
 }
 
 .product-list .product-items {
-    background: #fff;
+    background: var(--footer);
     padding: 16px;
     border-radius: 16px;
     transition: all 0.3s ease;
@@ -429,7 +440,7 @@ span.menu-close {
 }
 
 .product-content h3 {
-    color: #212529;
+    color: var(--color-primary);
     text-decoration: none;
     font-size: 1.375rem;
     font-weight: 600;
@@ -445,9 +456,7 @@ span.menu-close {
     margin-top: 60px;
 }
 
-.why-shop-marketplaxe {
-    background-color: #f5f5f545;
-}
+
 
 .marketplaxe-grid-list {
     background: var(--color-white);
@@ -539,10 +548,6 @@ span.menu-close {
     max-width: 500px;
 }
 
-.newsletter {
-    background-color: #f5f5f545;
-}
-
 .newsletter-consent {
     margin-top: 15px;
     text-align: left;
@@ -554,7 +559,7 @@ span.menu-close {
     gap: 10px;
     font-size: 14px;
     line-height: 1.5;
-    color: #555;
+    color: var(--color-white);
     cursor: pointer;
     justify-content: center;
 }
@@ -576,7 +581,7 @@ span.menu-close {
 .newsletter-content h2 {
     font-size: 38px;
     font-weight: 700;
-    color: var(--secondary);
+    color: var(--color-primary);
     margin-bottom: 10px;
     text-align: center;
 }
@@ -584,7 +589,7 @@ span.menu-close {
 .newsletter-content p {
     font-size: 16px;
     line-height: 24px;
-    color: var(--color-black);
+    color: var(--color-white);
     margin-bottom: 20px;
     font-family: var(--font-text);
     max-width: 500px;
@@ -631,7 +636,7 @@ span.menu-close {
 }
 
 .footer {
-    background: #04535c;
+    background: var(--footer);
 }
 
 .footer-inner {
@@ -878,7 +883,7 @@ span.menu-close {
 }
 
 .blog-card-content {
-    background: rgba(255, 255, 255, 1);
+    background: var(--footer);
     padding: 20px;
     border-radius: 12px;
     margin-top: -20px;
@@ -886,9 +891,7 @@ span.menu-close {
     position: relative;
 }
 
-.blogs-sec {
-    background-color: #f8f7f4;
-}
+
 
 .blog-card-content h2 {
     font-weight: 600;
@@ -900,7 +903,7 @@ span.menu-close {
 }
 
 .blog-card-content h2 a {
-    color: var(--color-black);
+    color: var(--color-primary);
     text-decoration: none;
 }
 
@@ -957,7 +960,7 @@ span.menu-close {
 
 .articles-text p {
     text-align: center;
-    color: #212529;
+    color: var(--color-white);
     text-decoration: none;
     font-size: 1rem;
     font-weight: 600;
@@ -973,6 +976,7 @@ span.menu-close {
 .blog-header h1 {
     font-size: 30px;
     font-weight: bold;
+    color: var(--color-primary);
 }
 
 .blog-content-details ul li,
@@ -991,12 +995,13 @@ span.menu-close {
     width: 8px;
     height: 8px;
     display: block;
-    background: #04535c;
+    background: var(--color-primary);
     border-radius: 50%;
 }
 
 .blog-content-details h2 {
     font-size: 26px;
+    color: var(--color-white);
     font-weight: bold;
 }
 
@@ -1015,6 +1020,8 @@ span.menu-close {
 .content-box-p h2 {
     font-size: 24px;
     font-weight: 600;
+    color: var(--color-primary);
+    margin-top: 1.5rem;
 }
 
 .content-box-p strong {
@@ -1046,7 +1053,7 @@ span.menu-close {
 .con-icon {
     width: 48px;
     height: 48px;
-    background: #919eab14;
+    background: var(--color-primary);
     border-radius: 50%;
     display: flex;
     align-items: center;
@@ -1055,7 +1062,7 @@ span.menu-close {
 }
 
 .assist-card p {
-    color: #212529;
+    color: var(--color-primary);
     text-decoration: none;
     font-size: 1rem;
     font-weight: 600;
@@ -1066,18 +1073,17 @@ span.menu-close {
 
 .assist-card a,
 .assist-card span {
-    color: #495057;
+    color: var(--color-white);
     text-decoration: none;
     font-size: 16px;
 }
 
 .contact-form {
-    background: #f5f5f545;
     padding: 60px 0;
 }
 
 .contact-form-box {
-    background: #fff;
+    background: var(--footer);
     padding: 30px;
     border-radius: 16px;
 }
@@ -1086,10 +1092,10 @@ span.menu-close {
 .field textarea {
     width: 100%;
     padding: 12px 16px;
-    border: 1px solid #d1d5db;
+    border: 1px solid var(--color-primary);
     border-radius: 6px;
     font-size: 16px;
-    background: #fff;
+    background: var(--color-black);
     outline: none;
     transition: all .3s ease;
 }
@@ -1114,13 +1120,13 @@ small.error-message {
 
 .contact-title {
     font-size: 24px;
-    color: var(--color-black);
+    color: var(--color-primary);
     font-weight: 600;
     margin-bottom: 20px;
 }
 
 .faq-sec {
-    background: #fff;
+    background: var(--footer);
     padding: 30px;
     border-radius: 16px;
 }
@@ -1132,13 +1138,13 @@ small.error-message {
 }
 
 .accordion-button:not(.collapsed) {
-    color: var(--color-white);
+    color: var(--color-black);
     background-color: var(--color-primary);
 }
 
 .faq-sec .section-title h2 {
     font-size: 24px;
-    color: var(--color-black);
+    color: var(--color-primary);
     font-weight: 600;
     margin-bottom: 20px;
     text-align: left;
@@ -1180,7 +1186,7 @@ form#newsletterForm small {
     font-weight: 600;
     text-transform: uppercase;
     letter-spacing: 2px;
-    color: #6b7280;
+    color: var(--grace);
     display: block;
     margin-bottom: 5px;
 }
@@ -1189,10 +1195,11 @@ form#newsletterForm small {
     font-size: 26px;
     line-height: 36px;
     font-weight: 700;
+    color: var(--color-primary);
 }
 
 .about-story p {
-    color: #495057;
+    color: var(--color-white);
     text-decoration: none;
     font-size: 16px;
     line-height: 26px;
@@ -1320,16 +1327,12 @@ form#newsletterForm small {
     top: 15px;
     left: 15px;
     background: var(--color-primary);
-    color: #fff;
+    color: var(--color-black);
     padding: 6px 12px;
     border-radius: 30px;
     font-size: 12px;
     font-weight: 600;
     z-index: 5;
-}
-
-.bg-light-cst {
-    background: #f5f5f545;
 }
 
 .dro-item-card {
@@ -1357,11 +1360,12 @@ form#newsletterForm small {
 .dro-item-card h3 {
     font-size: 22px;
     font-weight: 600;
+    color: var(--color-primary);
 }
 
 
 .dro-item-card p {
-    color: #495057;
+    color: var(--color-white);
     text-decoration: none;
     font-size: 16px;
 }
@@ -1400,13 +1404,12 @@ form#newsletterForm small {
 .tab:hover {
     background-color: var(--color-primary);
     border: 1px solid var(--color-primary);
-    color: #fff;
 }
 
 .tab.active {
     background-color: var(--color-primary);
     border: 1px solid var(--color-primary);
-    color: #fff;
+    color: var(--color-black);
 }
 
 .tab-content {

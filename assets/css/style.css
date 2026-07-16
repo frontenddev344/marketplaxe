@@ -776,7 +776,7 @@ span.menu-close {
     display: inline-block;
     border: 0.125rem solid var(--color-primary);
     background-color: var(--color-primary);
-    color: var(--color-white);
+    color: var(--color-black);
 }
 
 .reject-cookies {
@@ -789,7 +789,7 @@ span.menu-close {
     display: inline-block;
     border: 0.125rem solid var(--color-primary);
     background-color: transparent;
-    color: var(--color-primary);
+    color: var(--color-black);
 }
 
 /* Cookies CSS End */

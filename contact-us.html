@@ -362,23 +362,40 @@
             </div>
         </section>
 
+
         <!-- Newsletter -->
-        <section class="newsletter sp shop-new">
+        <section class="newsletter sp">
             <div class="container">
                 <div class="newsletter-content">
                     <h2>Newsletter</h2>
-                    <p> Stay informed about product discovery platform deals, new arrivals, and seasonal promotions.
+                    <p>
+                        Stay informed about product discovery platform deals, new arrivals, and seasonal promotions.
                     </p>
+
                     <form id="newsletterForm">
                         <div class="newsletter-inner">
                             <input type="email" name="email" id="email" placeholder="Enter your email address">
+
                             <button type="submit" class="custom-btn btn-primary">
                                 Subscribe
                             </button>
                         </div>
 
+                        <!-- Marketing Consent -->
+                        <div class="newsletter-consent">
+                            <label for="newsletterConsent">
+                                <input type="checkbox" id="newsletterConsent" name="newsletterConsent" required>
+                                I agree to receive marketing emails from MarketPlaxe.
+                                See our <a href="privacy-policy.html">Privacy Policy</a>.
+                            </label>
+                        </div>
+
                         <small id="emailError" style="color:red; display:none; margin-top:8px;">
                             Please enter a valid email address.
+                        </small>
+
+                        <small id="consentError" style="color:red; display:none; margin-top:8px;">
+                            You must agree before subscribing.
                         </small>
                     </form>
                 </div>

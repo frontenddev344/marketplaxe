@@ -1422,7 +1422,6 @@ form#newsletterForm small {
 
 .footer-logo img {
     max-width: 230px;
-    filter: brightness(0) invert(1);
 }
 
 .tab-cs {

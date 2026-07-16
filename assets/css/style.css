@@ -415,6 +415,11 @@ span.menu-close {
     border: 1px solid #dfe3e8;
 }
 
+.prices {
+    display: inline-block;
+    margin-top: 0.625rem;
+}
+
 .product-list .product-items:hover {
     border: 1px solid var(--color-primary);
 

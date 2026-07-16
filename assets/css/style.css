@@ -438,7 +438,7 @@ span.menu-close {
 
 .product-img img {
     height: 100%;
-    object-fit: cover;
+    object-fit: contain;
     border-radius: 1rem;
     transition: all 0.3s ease;
     width: 100%;

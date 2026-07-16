@@ -459,8 +459,8 @@ span.menu-close {
 
 
 .marketplaxe-grid-list {
-    background: var(--color-white);
-    border: 1px solid #ececec;
+    background: var(--footer);
+    border: 1px solid var(--color-primary);
     border-radius: 18px;
     padding: 30px 20px;
     text-align: center;
@@ -477,7 +477,7 @@ span.menu-close {
     width: 74px;
     height: 74px;
     border-radius: 50%;
-    background: rgba(8, 129, 120, .08);
+    background: var(--color-primary);
     display: flex;
     align-items: center;
     justify-content: center;
@@ -489,13 +489,14 @@ span.menu-close {
 .marketplaxe-content h3 {
     font-size: 22px;
     font-weight: 600;
+    color: var(--color-white);
 }
 
 
 .marketplaxe-content p {
     font-size: 16px;
     line-height: 24px;
-    color: var(--color-black);
+    color: var(--grace);
     margin-bottom: 35px;
     font-family: var(--font-text);
     text-align: center;

@@ -143,9 +143,10 @@
         font-size: 16px;
 
     }
+
     .assistance-inr .row .col-lg-3.col-md-6 {
-    margin-bottom: 20px;
-}
+        margin-bottom: 20px;
+    }
 }
 
 @media (max-width: 575px) {
@@ -193,6 +194,12 @@
 
     .hero-btn {
         gap: 10px;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .header-btn {
+        display: none;
     }
 }
 

@@ -270,38 +270,6 @@
                                 </div>
                                 <div class="product-content">
                                     <h3>Football Home Jersey</h3>
-                                    <div class="rating">
-                                        <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" fill="#FFC107"
-                                            viewBox="0 0 24 24">
-                                            <path
-                                                d="M12 2l2.92 6.26L22 9.27l-5 4.87L18.18 22 12 18.56 5.82 22 7 14.14 2 9.27l7.08-1.01L12 2z" />
-                                        </svg>
-
-                                        <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" fill="#FFC107"
-                                            viewBox="0 0 24 24">
-                                            <path
-                                                d="M12 2l2.92 6.26L22 9.27l-5 4.87L18.18 22 12 18.56 5.82 22 7 14.14 2 9.27l7.08-1.01L12 2z" />
-                                        </svg>
-
-                                        <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" fill="#FFC107"
-                                            viewBox="0 0 24 24">
-                                            <path
-                                                d="M12 2l2.92 6.26L22 9.27l-5 4.87L18.18 22 12 18.56 5.82 22 7 14.14 2 9.27l7.08-1.01L12 2z" />
-                                        </svg>
-
-                                        <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" fill="#FFC107"
-                                            viewBox="0 0 24 24">
-                                            <path
-                                                d="M12 2l2.92 6.26L22 9.27l-5 4.87L18.18 22 12 18.56 5.82 22 7 14.14 2 9.27l7.08-1.01L12 2z" />
-                                        </svg>
-
-                                        <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" fill="#FFC107"
-                                            viewBox="0 0 24 24">
-                                            <path
-                                                d="M12 2l2.92 6.26L22 9.27l-5 4.87L18.18 22 12 18.56 5.82 22 7 14.14 2 9.27l7.08-1.01L12 2z" />
-                                        </svg>
-                                        <span>(4.7) 58 reviews</span>
-                                    </div>
                                     <span class="prices"><strong>Price:</strong> €49.99</span>
 
                                 </div>
@@ -440,24 +408,39 @@
             </div>
         </section>
 
-
         <!-- Newsletter -->
         <section class="newsletter sp">
             <div class="container">
                 <div class="newsletter-content">
                     <h2>Join Our Community</h2>
-                    <p>Subscribe to receive product discovery platform updates, new collections, and exclusive offers.
+                    <p>
+                        Subscribe to receive product discovery platform updates, new collections, and exclusive offers.
                     </p>
+
                     <form id="newsletterForm">
                         <div class="newsletter-inner">
                             <input type="email" name="email" id="email" placeholder="Enter your email address">
+
                             <button type="submit" class="custom-btn btn-primary">
-                                Newsletter
+                                Subscribe
                             </button>
+                        </div>
+
+                        <!-- Marketing Consent -->
+                        <div class="newsletter-consent">
+                            <label for="newsletterConsent">
+                                <input type="checkbox" id="newsletterConsent" name="newsletterConsent" required>
+                                I agree to receive marketing emails from MarketPlaxe.
+                                See our <a href="privacy-policy.html">Privacy Policy</a>.
+                            </label>
                         </div>
 
                         <small id="emailError" style="color:red; display:none; margin-top:8px;">
                             Please enter a valid email address.
+                        </small>
+
+                        <small id="consentError" style="color:red; display:none; margin-top:8px;">
+                            You must agree before subscribing.
                         </small>
                     </form>
                 </div>

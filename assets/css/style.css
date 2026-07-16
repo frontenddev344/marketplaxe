@@ -1442,12 +1442,15 @@ form#newsletterForm small {
 }
 
 .notice {
-    padding-bottom: 40px;
+    background: var(--color-black);
+    padding: 1.25rem;
+    border-radius: 1.875rem;
+    margin-bottom: 1.25rem;
 }
 
 .notice p {
     margin: 0;
-    font-size: 12px;
+    font-size: 0.9375rem;
     font-style: italic;
-    color: #fff;
+    color: var(--color-white);
 }

@@ -36,7 +36,7 @@
         position: fixed;
         top: 0;
         left: 0;
-        background: var(--color-white);
+        background: var(--color-black);
         height: 100vh;
         overflow-x: hidden;
         transition: width 0.3s ease;
@@ -50,9 +50,6 @@
         transition: width 0.3s ease;
     }
 
-    .menu-list ul li a {
-        color: var(--color-black);
-    }
 
     span.menu-close {
         padding: 0.375rem;

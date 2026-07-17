@@ -8,7 +8,7 @@
     --color-white: #ffffff;
     --text: #ffffff;
     --footer: #1b1b1b;
-    --grace: #6b7280;
+    --grace: #bbc2d1;
     --bg-light: #0c0c0c;
 
     /* Font */
@@ -220,6 +220,7 @@ span.menu-close {
     text-transform: uppercase;
     border-radius: 30px;
     text-decoration: none;
+    text-align: center;
 }
 
 .btn-primary:after,
@@ -414,7 +415,7 @@ span.menu-close {
 
 
 .featured-top-text p {
-    font-size: 18px;
+    font-size: 1.125rem;
     line-height: 1.8;
     color: var(--color-white);
     margin-bottom: 35px;
@@ -529,11 +530,7 @@ span.menu-close {
 }
 
 .marketplaxe-grid-list:hover .marketplaxe-icon {
-    background-color: var(--color-primary)
-}
-
-.marketplaxe-grid-list:hover .marketplaxe-icon svg {
-    stroke: var(--color-white);
+    transform: rotate(360deg);
 }
 
 .deal-bnr-content {
@@ -581,7 +578,7 @@ span.menu-close {
 }
 
 .newsletter-consent label {
-    display: flex;
+    display: block;
     align-items: flex-start;
     gap: 10px;
     font-size: 14px;
@@ -589,6 +586,7 @@ span.menu-close {
     color: var(--color-white);
     cursor: pointer;
     justify-content: center;
+    text-align: center;
 }
 
 .newsletter-consent input[type="checkbox"] {
@@ -1106,6 +1104,7 @@ span.menu-close {
     background: var(--color-black);
     outline: none;
     transition: all .3s ease;
+    color: var(--color-white);
 }
 
 small.error-message {

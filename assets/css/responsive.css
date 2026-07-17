@@ -14,9 +14,10 @@
     }
 
     .hero-sec {
-
         padding: 50px 0;
         height: auto;
+        background-color: rgba(0 0 0/60%);
+        background-blend-mode: multiply;
     }
 
     .hero-content h1 {
@@ -27,6 +28,10 @@
     .hero-content p {
         font-size: 16px;
         line-height: 26px;
+    }
+
+    html {
+        font-size: 15px;
     }
 }
 
@@ -146,11 +151,26 @@
     }
 }
 
+@media screen and (max-width:767px) {
+    .inr-bnr {
+        background-color: rgba(0 0 0/50%) !important;
+        background-blend-mode: multiply;
+    }
+
+    html {
+        font-size: 14px;
+    }
+}
+
 @media (max-width: 575px) {
     .footer-inner {
 
         grid-template-columns: 1fr;
 
+    }
+
+    .hero-btn {
+        flex-direction: column;
     }
 
     .product-list {
@@ -192,6 +212,8 @@
     .hero-btn {
         gap: 10px;
     }
+
+
 }
 
 @media screen and (max-width: 480px) {

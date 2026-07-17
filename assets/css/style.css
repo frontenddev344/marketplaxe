@@ -760,6 +760,7 @@ span.menu-close {
     transition: all 500ms ease-out;
     border: 0.188rem solid var(--color-primary);
     border-radius: 1.875rem;
+    background-color: var(--bg-light);
 }
 
 .cookie-alert.show {
@@ -771,14 +772,14 @@ span.menu-close {
 .cookie-alert .card-title {
     font-size: 1.5rem;
     font-weight: 600;
-    color: var(--charcoal);
+    color: var(--color-primary);
 }
 
 .cookie-alert .card-text {
     font-size: 0.9375rem;
     line-height: 1.5;
     margin-bottom: 1rem;
-    color: var(--charcoal);
+    color: var(--color-white);
     font-weight: 600;
 }
 
@@ -793,31 +794,6 @@ span.menu-close {
     font-size: 0.9375rem;
 }
 
-.accept-cookies {
-    padding: 0.875rem 1.875rem;
-    border-radius: 3.125rem;
-    text-decoration: none;
-    font-size: 1rem;
-    font-weight: 600;
-    transition: 0.3s ease;
-    display: inline-block;
-    border: 0.125rem solid var(--color-primary);
-    background-color: var(--color-primary);
-    color: var(--color-black);
-}
-
-.reject-cookies {
-    padding: 0.875rem 1.875rem;
-    border-radius: 3.125rem;
-    text-decoration: none;
-    font-size: 1rem;
-    font-weight: 600;
-    transition: 0.3s ease;
-    display: inline-block;
-    border: 0.125rem solid var(--color-primary);
-    background-color: transparent;
-    color: var(--color-black);
-}
 
 /* Cookies CSS End */
 

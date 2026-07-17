@@ -62,6 +62,7 @@ label,
 strong {
     font-family: var(--font-text);
     color: var(--color-white);
+    text-decoration: none;
 }
 
 .bg_light {
@@ -81,6 +82,10 @@ strong {
 }
 
 .header .announcement strong {
+    color: var(--color-black);
+}
+
+.header .btn-primary:hover {
     color: var(--color-black);
 }
 
@@ -157,20 +162,7 @@ span.menu-close {
     width: 100%;
 }
 
-.header-btn a {
-    background-color: var(--color-primary);
-    color: var(--color-black);
-    box-shadow: 0 6px 15px rgba(8, 129, 120, 0.16);
-    border-radius: .5rem;
-    padding: 11px 21px;
-    text-decoration: none;
-    font-family: var(--font-text);
-    font-weight: 600;
-}
 
-.header-btn a:hover {
-    background-color: var(--color-hover);
-}
 
 /*  */
 .hero-sec {
@@ -211,34 +203,59 @@ span.menu-close {
     max-width: 590px;
 }
 
-.btn-primary {
-    background-color: var(--color-primary);
-    color: var(--color-black);
-    box-shadow: 0 6px 15px rgba(8, 129, 120, 0.16);
-    border-radius: .5rem;
-    padding: 11px 21px;
+/* Butn CSS Start */
+.btn-primary,
+.btn-secondary {
+    padding: 0.625rem 1.5625rem;
+    font-weight: 500;
+    background: transparent;
+    outline: none !important;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    position: relative;
+    display: inline-block;
+    border: 1px solid var(--color-primary);
+    z-index: 1;
+    color: var(--color-primary);
+    text-transform: uppercase;
+    border-radius: 30px;
     text-decoration: none;
-    font-family: var(--font-text);
-    font-weight: 600;
-    transition: width 0.3s ease;
 }
 
-.btn-secondary {
-    background-color: var(--color-white);
-    color: var(--color-black);
-    box-shadow: 0 6px 15px rgba(8, 129, 120, 0.16);
-    border-radius: .5rem;
-    padding: 11px 21px;
-    text-decoration: none;
-    font-family: var(--font-text);
-    font-weight: 600;
-    transition: width 0.3s ease;
+.btn-primary:after,
+.btn-secondary:after {
+    position: absolute;
+    content: "";
+    width: 100%;
+    height: 0;
+    bottom: 0;
+    left: 0;
+    z-index: -1;
+    background: var(--color-primary);
+    transition: all 0.3s ease;
+    border-radius: 30px;
 }
 
 .btn-primary:hover,
 .btn-secondary:hover {
-    background-color: var(--color-hover);
+    color: var(--color-black);
 }
+
+.btn-primary:hover:after,
+.btn-secondary:hover:after {
+    top: 0;
+    height: 100%;
+}
+
+.btn-primary:active,
+.btn-secondary:active {
+    top: 2px;
+}
+
+
+
+
+
 
 .hero-btn {
     display: flex;
@@ -895,7 +912,7 @@ span.menu-close {
 .blog-card-content {
     background: var(--footer);
     padding: 20px;
-    border-radius: 12px;
+    border-radius: 7px;
     margin-top: -20px;
     z-index: 1;
     position: relative;
@@ -942,6 +959,11 @@ span.menu-close {
 .blog-card-image img {
     width: 100%;
     display: block;
+}
+
+.blog-card-wrapper {
+    max-width: 70rem;
+    margin: 0 auto;
 }
 
 .blog-card-content {
